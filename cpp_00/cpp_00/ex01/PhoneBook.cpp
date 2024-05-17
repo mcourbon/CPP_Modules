@@ -54,7 +54,7 @@ void    PhoneBook::Search() {
     std::cout << "---------------------------------------------" << std::endl;
     std::cout << "Please enter the contact's index: ";
     std::getline(std::cin, cmd);
-    isNumeric = this->contact[0].onlyDigits(cmd);
+    isNumeric = Contact::onlyDigits(cmd);
     std::istringstream(cmd) >> index;
     if (!isNumeric || cmd.empty() || index < 1 || index > 8) {
         std::cout << "Incorect index" << std::endl;

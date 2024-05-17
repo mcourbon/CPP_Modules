@@ -1,4 +1,4 @@
-NAME		=	awsphonebook
+NAME		=	PhoneBook2000
 
 SRCS		=	main.cpp Contact.cpp PhoneBook.cpp
 OBJS		=	$(SRCS:.cpp=.o)

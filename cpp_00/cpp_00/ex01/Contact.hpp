@@ -17,7 +17,13 @@
 # include <iomanip>
 # include <cstdlib>
 
-# define NUMBER = 1
+# define RED "\033[31m"
+# define BLUE "\033[34m"
+# define GREEN "\033[32m"
+# define YELLOW "\033[33m"
+# define RESET "\033[0m"
+# define UNDER "\033[4m"
+# define BOLD "\033[1m"
 
 class Contact {
     
@@ -32,15 +38,15 @@ private:
 public:
     Contact();
     ~Contact();
-    std::string  Trunc(std::string str);
-    std::string  getText(std::string str);
-    bool    checkDeclaration();
-    bool    onlyDigits(std::string str);
-    void    displayLine(int index);
-    void    initContact();
-    void    setContact();
-    void    setIndex(int n);
-    void    displayContact();
+    std::string Trunc(std::string str);
+    std::string getText(std::string str);
+    bool        checkDeclaration();
+    static bool onlyDigits(const std::string str);
+    void        displayLine(int index);
+    void        initContact();
+    void        setContact();
+    void        setIndex(int n);
+    void        displayContact();
 };
 
 #endif

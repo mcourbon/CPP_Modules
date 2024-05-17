@@ -6,7 +6,7 @@
 /*   By: shifterpro <shifterpro@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 11:55:10 by shifterpro        #+#    #+#             */
-/*   Updated: 2024/04/17 12:14:09 by shifterpro       ###   ########.fr       */
+/*   Updated: 2024/04/17 12:05:04 by shifterpro       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ int main() {
         std::cout << std::endl;
         std::cout << "   Welcome to your Awesome PhoneBook" << std::endl;
         std::cout << std::endl;
-        std::cout << "--------------->USAGE<----------------" << std::endl;
-        std::cout << "| ADD     : To add a contact.        |" << std::endl;
-        std::cout << "| SEARCH  : To search for a contact. |" << std::endl;
-        std::cout << "| EXIT    : To exit the PhoneBook.   |" << std::endl;
+        std::cout << "--------------->" << BOLD << "USAGE" << RESET << "<----------------" << std::endl;
+        std::cout << "| " << RED << "ADD" << RESET << "     : To add a contact.        |" << std::endl;
+        std::cout << "| " << RED << "SEARCH" << RESET << "  : To search for a contact. |" << std::endl;
+        std::cout << "| " << RED << "EXIT" << RESET << "    : To exit the PhoneBook.   |" << std::endl;
         std::cout << "--------------------------------------" << std::endl;
         std::getline(std::cin, cmd);
         if (std::cin.eof())
@@ -38,6 +38,6 @@ int main() {
         else if (cmd.compare("EXIT") == 0)
             return ((std::cout << "See you soon !" << std::endl), 0);
         else
-            std::cout << std::endl;
+            std::cout << "Invalid Input" << std::endl;
     }
 }

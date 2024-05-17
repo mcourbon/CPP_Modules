@@ -43,7 +43,7 @@ void    Contact::displayLine(int index) {
     std::cout << "|" << std::setw(9) << index + 1 << ".";
     std::cout << "|" << std::setw(10) << Trunc(this->first_name);
     std::cout << "|" << std::setw(10) << Trunc(this->last_name);
-    std::cout << "|" << std::setw(10) << Trunc(this->phone_number);
+    std::cout << "|" << std::setw(10) << Trunc(this->nick_name);
     std::cout << "|" << std::endl;
 }
 
@@ -82,7 +82,7 @@ bool    Contact::checkDeclaration() {
     return (true);
 }
 
-bool    Contact::onlyDigits(std::string str) {
+bool    Contact::onlyDigits(const std::string str) {
     bool    isNumeric = true;
     size_t  i = 0;
 
