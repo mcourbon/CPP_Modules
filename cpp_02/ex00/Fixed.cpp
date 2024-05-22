@@ -6,7 +6,7 @@
 /*   By: shifterpro <shifterpro@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 11:18:30 by shifterpro        #+#    #+#             */
-/*   Updated: 2024/05/02 11:40:08 by shifterpro       ###   ########.fr       */
+/*   Updated: 2024/05/19 16:27:05 by shifterpro       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ Fixed::Fixed(const Fixed& other) {
 
 Fixed& Fixed::operator=(const Fixed& other) {
     std::cout << "Copy assignment operator called" << std::endl;
-    this->fixedNbrComa = other.getRawBits();
+    if (this != &other)
+        this->fixedNbrComa = other.getRawBits();
     return *this;
 }
 
