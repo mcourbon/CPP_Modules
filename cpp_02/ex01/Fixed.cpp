@@ -20,7 +20,7 @@ Fixed::Fixed(const int value) : fixedNbrComa(value << nbrBit) {
     std::cout << "Int constructor called" << std::endl;
 }
 
-Fixed::Fixed(const float value) : fixedNbrComa(std::roundf(value * (1 << nbrBit))) {
+Fixed::Fixed(const float value) : fixedNbrComa(roundf(value * (1 << nbrBit))) {
     std::cout << "Float constructor called" << std::endl;
 }
 
