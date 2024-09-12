@@ -26,19 +26,19 @@ class ScalarConverter
 		ScalarConverter(ScalarConverter &src);
 		~ScalarConverter();
         
-	    static bool				checkChar(string const &str);
-	    static bool				checkInt(string const &str);
-	    static bool				checkFloat(string const &str);
-	    static bool				checkDouble(string const &str);
-	    static void				printChar(string const &str);
-	    static void				printInt(string const &str);
-	    static void				printFloat(string const &str);
-	    static void				printDouble(string const &str);
+	    static bool				checkChar(std::string const &str);
+	    static bool				checkInt(std::string const &str);
+	    static bool				checkFloat(std::string const &str);
+	    static bool				checkDouble(std::string const &str);
+	    static void				printChar(std::string const &str);
+	    static void				printInt(std::string const &str);
+	    static void				printFloat(std::string const &str);
+	    static void				printDouble(std::string const &str);
 	
 	public:
 	    ScalarConverter			&operator=(const ScalarConverter &rhs);
 
-	static void				convert(string const &str);
+	static void				convert(std::string const &str);
 };
 
 #endif

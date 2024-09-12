@@ -14,65 +14,65 @@
 
 int main()
 {
-    cout << "------------" << endl;
-	cout << "CONVERTING 'Y': "  << endl;
-	cout << "------------" << endl;
+    std::cout << "------------" << std::endl;
+	std::cout << "CONVERTING 'Y': "  << std::endl;
+	std::cout << "------------" << std::endl;
 	ScalarConverter::convert("Y");
-	cout << endl;
+	std::cout << std::endl;
 
-	cout << "------------" << endl;
-	cout << "CONVERTING 42 : "  << endl;
-	cout << "------------" << endl;
+	std::cout << "------------" << std::endl;
+	std::cout << "CONVERTING 42 : "  << std::endl;
+	std::cout << "------------" << std::endl;
 	ScalarConverter::convert("42");
-	cout << endl;
+	std::cout << std::endl;
 
 
-	cout << "------------" << endl;
-	cout << "CONVERTING 14.4f : " << endl;
-	cout << "------------" << endl;
+	std::cout << "------------" << std::endl;
+	std::cout << "CONVERTING 14.4f : " << std::endl;
+	std::cout << "------------" << std::endl;
 	ScalarConverter::convert("14.4f");
-	cout << endl;
+	std::cout << std::endl;
 
 
-	cout << "------------" << endl;
-	cout << "CONVERTING 65.7 : "  << endl;
-	cout << "------------" << endl;
+	std::cout << "------------" << std::endl;
+	std::cout << "CONVERTING 65.7 : "  << std::endl;
+	std::cout << "------------" << std::endl;
 	ScalarConverter::convert("65.7");
-	cout << endl;
+	std::cout << std::endl;
 
-	cout << "------------" << endl;
-	cout << "CONVERTING a double greater then float max : " << endl;
-	cout << "------------" << endl;
+	std::cout << "------------" << std::endl;
+	std::cout << "CONVERTING a double greater then float max : " << std::endl;
+	std::cout << "------------" << std::endl;
 	ScalarConverter::convert("34028234663852885981170418348459163244925440.0000000000000000");
-	cout << endl;
+	std::cout << std::endl;
 
-	cout << "------------" << endl;
-	cout << "CONVERTING nan : "  << endl;
-	cout << "------------" << endl;
+	std::cout << "------------" << std::endl;
+	std::cout << "CONVERTING nan : "  << std::endl;
+	std::cout << "------------" << std::endl;
 	ScalarConverter::convert("nan");
-	cout << endl;
+	std::cout << std::endl;
 
-	cout << "------------" << endl;
-	cout << "CONVERTING nanf : "  << endl;
-	cout << "------------" << endl;
+	std::cout << "------------" << std::endl;
+	std::cout << "CONVERTING nanf : "  << std::endl;
+	std::cout << "------------" << std::endl;
 	ScalarConverter::convert("nanf");
-	cout << endl;
+	std::cout << std::endl;
 
-	cout << "------------" << endl;
-	cout << "CONVERTING +inff : "  << endl;
-	cout << "------------" << endl;
+	std::cout << "------------" << std::endl;
+	std::cout << "CONVERTING +inff : "  << std::endl;
+	std::cout << "------------" << std::endl;
 	ScalarConverter::convert("+inff");
-	cout << endl;
+	std::cout << std::endl;
 	
-	cout << "------------" << endl;
-	cout << "CONVERTING -inff : "  << endl;
-	cout << "------------" << endl;
+	std::cout << "------------" << std::endl;
+	std::cout << "CONVERTING -inff : "  << std::endl;
+	std::cout << "------------" << std::endl;
 	ScalarConverter::convert("-inff");
-	cout << endl;
+	std::cout << std::endl;
 
-	cout << "------------" << endl;
-	cout << "CONVERTING \"ewqewq\" : "  << endl;
-	cout << "------------" << endl;
+	std::cout << "------------" << std::endl;
+	std::cout << "CONVERTING \"ewqewq\" : "  << std::endl;
+	std::cout << "------------" << std::endl;
 	ScalarConverter::convert("ewqeqw");
-	cout << endl;
+	std::cout << std::endl;
 }
