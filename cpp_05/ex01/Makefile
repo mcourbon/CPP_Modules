@@ -1,8 +1,8 @@
 NAME		=	ex01
 
-SRCS		=	main.cpp Bureaucrate.cpp
+SRCS		=	main.cpp Bureaucrat.cpp Form.cpp
 OBJS		=	$(SRCS:.cpp=.o)
-INCLUDES	=	Bureaucrate.hpp
+INCLUDES	=	Bureaucrat.hpp Form.hpp
 CC			=	c++
 CFLAGS		=	-Wall -Werror -Wextra -std=c++98
 

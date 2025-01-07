@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shifterpro <shifterpro@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mcourbon <mcourbon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 20:20:50 by shifterpro        #+#    #+#             */
-/*   Updated: 2024/06/19 18:34:49 by shifterpro       ###   ########.fr       */
+/*   Updated: 2024/12/21 11:49:54 by mcourbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@
 # include <iostream>
 # include "AForm.hpp"
 
-class Form;
+class AForm;
 
 class Bureaucrat {
     private:
         int          _grade;
-        std::string  _name;
+        const std::string _name;
         Bureaucrat();
 
     public:

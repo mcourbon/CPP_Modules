@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shifterpro <shifterpro@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mcourbon <mcourbon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 20:27:15 by shifterpro        #+#    #+#             */
-/*   Updated: 2024/06/12 20:03:55 by shifterpro       ###   ########.fr       */
+/*   Updated: 2024/10/10 10:49:55 by mcourbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,11 +60,11 @@ void        Bureaucrat::increaseGrade() {
         this->_grade--;
 }
 
-const char  *Bureaucrat::GradeTooHighException::what() const throw {
+const char  *Bureaucrat::GradeTooHighException::what() const throw() {
     return ("Grade too high");
 }
 
-const char  *Bureaucrat::GradeTooLowException::what() const throw {
+const char  *Bureaucrat::GradeTooLowException::what() const throw() {
     return ("Grade too low");
 }
 

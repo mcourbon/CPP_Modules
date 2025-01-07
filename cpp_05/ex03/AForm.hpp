@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AForm.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shifterpro <shifterpro@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mcourbon <mcourbon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 18:23:37 by shifterpro        #+#    #+#             */
-/*   Updated: 2024/09/17 16:26:01 by shifterpro       ###   ########.fr       */
+/*   Updated: 2024/10/10 11:22:12 by mcourbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ class AForm {
         int                 getGradeToSign() const;
         int                 getGradeToExec() const;
 
-        void                beSigned(const Bureaucrat &b);
+        void                beSigned(const Bureaucrat &src);
         virtual void        execute(const Bureaucrat &executor) = 0;
 
         class GradeTooLowException: public std::exception {

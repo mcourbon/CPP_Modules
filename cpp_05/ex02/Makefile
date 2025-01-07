@@ -1,8 +1,8 @@
 NAME		=	ex02
 
-SRCS		=	main.cpp Bureaucrate.cpp
+SRCS		=	main.cpp Bureaucrat.cpp AForm.cpp PresidentialPardonForm.cpp RobotomyRequestForm.cpp ShrubberyCreationForm.cpp
 OBJS		=	$(SRCS:.cpp=.o)
-INCLUDES	=	Bureaucrate.hpp
+INCLUDES	=	Bureaucrat.hpp AForm.hpp PresidentialPardonForm.hpp RobotomyRequestForm.hpp ShrubberyCreationForm.hpp
 CC			=	c++
 CFLAGS		=	-Wall -Werror -Wextra -std=c++98
 

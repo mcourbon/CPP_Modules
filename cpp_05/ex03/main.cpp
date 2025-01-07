@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shifterpro <shifterpro@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mcourbon <mcourbon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 11:41:57 by mfinette          #+#    #+#             */
-/*   Updated: 2024/09/17 17:00:29 by shifterpro       ###   ########.fr       */
+/*   Updated: 2024/12/29 14:02:18 by mcourbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 #include "Intern.hpp"
 
 int	main() {
-	Bureaucrat	Alexandre("Alexandre", 146);
+	Bureaucrat	Alexandre("Alexandre", 1);
 	Intern		Guillaume;
 	AForm		*form;
 	
