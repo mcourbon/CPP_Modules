@@ -6,7 +6,7 @@
 /*   By: shifterpro <shifterpro@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 13:35:21 by shifterpro        #+#    #+#             */
-/*   Updated: 2024/10/09 13:58:56 by shifterpro       ###   ########.fr       */
+/*   Updated: 2025/01/10 13:21:40 by shifterpro       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ class Array {
             this->_size = n;
             this->_array = new T[_size];
         }
-        Array(const Array &src) : _size(src.size), _array(new T[src.size]) {
-            for (int i = 0; i < src.size; i++) {
+        Array(const Array &src) : _size(src._size), _array(new T[src._size]) {
+            for (int i = 0; i < src.size(); i++) {
                 this->_array[i] = src->_array[i];
             }
         }
@@ -51,7 +51,7 @@ class Array {
             if (index >= this->_size)
                 throw std::out_of_range("Index not in the range");
             return this->_array[index];
-        }
+        }   
         size_t size() const {
             return this->_size;
         }
