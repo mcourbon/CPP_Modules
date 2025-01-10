@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shifterpro <shifterpro@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mcourbon <mcourbon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 15:34:37 by shifterpro        #+#    #+#             */
-/*   Updated: 2024/09/19 15:42:49 by shifterpro       ###   ########.fr       */
+/*   Updated: 2025/01/07 13:28:14 by mcourbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,10 @@ void	upperswap(char &a) {
 	a = toupper(a);
 }
 
-void	plusone(int	&a) {
-	a++;
+void	plusone(int const &a) {
+	std::cout << a + 1 << std::endl;
 }
+
 
 int main() {
     char	str[] = "am i yelling ?";

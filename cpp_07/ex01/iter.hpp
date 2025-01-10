@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   iter.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shifterpro <shifterpro@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mcourbon <mcourbon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 15:34:50 by shifterpro        #+#    #+#             */
-/*   Updated: 2024/09/19 15:37:13 by shifterpro       ###   ########.fr       */
+/*   Updated: 2025/01/07 13:27:44 by mcourbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,18 @@
 # include <iostream>
 # include <cstring>
 
-template <typename T, typename F>
-void    iter(T *array, size_t length, F func) {
+template <typename T>
+void    iter(T *array, size_t length, void(*f)(T const &)) {
     size_t i;
     for (i = 0; i < length; i++)
-        func(array[i]);
+        f(array[i]);
+}
+
+template <typename T>
+void    iter(T *array, size_t length, void(*f)(T &)) {
+    size_t i;
+    for (i = 0; i < length; i++)
+        f(array[i]);
 }
 
 #endif

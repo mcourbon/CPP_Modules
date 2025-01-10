@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shifterpro <shifterpro@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mcourbon <mcourbon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 13:35:21 by shifterpro        #+#    #+#             */
-/*   Updated: 2025/01/10 13:21:40 by shifterpro       ###   ########.fr       */
+/*   Updated: 2025/01/10 15:29:09 by mcourbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Array {
 
     public:
         Array() : _size(0), _array(new T[_size]) {};
-        Array(int n) {
+        Array(unsigned int n) {
             this->_size = n;
             this->_array = new T[_size];
         }
@@ -34,7 +34,7 @@ class Array {
             }
         }
         ~Array() {
-            delete this->_array;
+            delete[] this->_array;
         }
         Array &operator=(const Array &rhs) {
             if (this != rhs) {
@@ -51,7 +51,7 @@ class Array {
             if (index >= this->_size)
                 throw std::out_of_range("Index not in the range");
             return this->_array[index];
-        }   
+        }
         size_t size() const {
             return this->_size;
         }
